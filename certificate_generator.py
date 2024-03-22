@@ -27,7 +27,7 @@ def generate_certificates(template: st.image,
         text_x = x_coordinate
         text_y = y_coordinate
         draw.text((text_x, text_y), full_name, (35, 57, 75), font=font)
-        certificate_filename = os.path.join(user_output_folder, f'{full_name.replace(' ', '_')}.png')
+        certificate_filename = os.path.join(user_output_folder, f"{full_name.replace(' ', '_')}.png")
         certificate_img.save(certificate_filename)
         counter += 1
         progress_percent = int((counter/total_names)*100)
