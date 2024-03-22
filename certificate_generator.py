@@ -3,7 +3,7 @@ import pandas as pd
 import os
 import streamlit as st
 
-FONT_PATH = r'.\Pacifico-Regular.ttf'
+FONT_PATH = 'Pacifico-Regular.ttf'
 
 
 def generate_certificates(template: st.image,
