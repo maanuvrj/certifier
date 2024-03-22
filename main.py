@@ -16,7 +16,7 @@ from clear_files import file_deleter
 # TODO: add fonts
 
 OUTPUT_FOLDER = 'zips'
-FONT_PATH = r'.\Pacifico-Regular.ttf'
+FONT_PATH = 'Pacifico-Regular.ttf'
 
 if 'x_coordinate' and 'y_coordinate' and 'image' and 'certifiable_names' not in st.session_state:
     st.session_state.x_coordinate = None
