@@ -34,6 +34,16 @@ def delete_file(file_path: str) -> None:
 
 def main_page():
     st.title('Hi, welcome to certifier.')
+    st.header('Heres how you can bulk generate certificates for free!')
+    st.subheader('1. Choose a certificate template which you want to add names to.')
+    st.caption('Choose the x and y coordinates and size for the text ')
+    st.subheader('2. Upload the list of names in csv format')
+    st.caption('and choose the batch you want to generate certificates for.At a time currently you can only generate 20 certificates at max.')
+    st.subheader('3. Generate certificates')
+    st.caption('You dont really have to do much. just click a button.')
+    st.subheader('4. Generate zip and download all the certificates 🥳')
+    st.header('About this project')
+    st.write('This website allows you to bulk generate certificates. This saves manual effort for making certificates for attendees in a session, event, etc.')
     file_deleter()
 
 
