@@ -18,6 +18,15 @@ from clear_files import file_deleter
 OUTPUT_FOLDER = 'zips'
 FONT_PATH = 'Pacifico-Regular.ttf'
 
+
+FAVICO = 'favico.png'
+favico = Image.open(FAVICO)
+st.set_page_config(
+    page_title='Certifier',
+    page_icon=favico
+)
+
+
 if 'x_coordinate' and 'y_coordinate' and 'image' and 'certifiable_names' not in st.session_state:
     st.session_state.x_coordinate = None
     st.session_state.y_coordinate = None
